@@ -1,13 +1,20 @@
 // YOUR TASK: Add more pictures!
-var pictures = ['./imgs/dog.jpg'];
+var x = ["./imgs/puppy1.jpeg","./imgs/puppy2.jpeg","./imgs/puppy3.jpeg","./imgs/puppy4.jpg"]
 var currentIndex = 0;
 
 function showNextPicture() {
-  currentIndex++; // increment current picture
-  // if currentIndex is too large, start from the beginning again
-  if (currentIndex >= pictures.length) {
-    currentIndex = 0;
+
+	var s= document.getElementsByTagName("img");
+	s[0].src= x[currentIndex];
+	currentIndex++;
+	if (currentIndex ==4 ){
+		currentIndex=0
+	}
+
+
+
+
+
   }
 
   // YOUR TASK: Finish this function!
-}
